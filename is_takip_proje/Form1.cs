@@ -19,7 +19,9 @@ namespace is_takip_proje
 
         private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            Formlar.FrmPersoneller frm2 = new Formlar.FrmPersoneller();
+            frm2.MdiParent = this;
+            frm2.Show();
         }
 
         private void BtnDepartmanListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

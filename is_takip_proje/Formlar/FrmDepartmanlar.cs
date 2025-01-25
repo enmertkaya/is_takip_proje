@@ -60,5 +60,15 @@ namespace is_takip_proje.Formlar
             TxtID.Text = gridView1.GetFocusedRowCellValue("ID").ToString();
             TxtAd.Text = gridView1.GetFocusedRowCellValue("Ad").ToString();
         }
+
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            int x = int.Parse(TxtID.Text);
+            var deger = db.TblDepartmanlar.Find(x);
+            deger.Ad = TxtAd.Text;
+            db.SaveChanges();
+            XtraMessageBox.Show("Departman Güncelleme Başarılı Bir Şekilde Gerçekleşti", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            Listele();
+        }
     }
 }
