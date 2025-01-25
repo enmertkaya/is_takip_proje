@@ -33,9 +33,9 @@ namespace is_takip_proje.Formlar
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnSil = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnEkle = new DevExpress.XtraEditors.SimpleButton();
             this.BtnListele = new DevExpress.XtraEditors.SimpleButton();
             this.TxtAd = new DevExpress.XtraEditors.TextEdit();
             this.TxtID = new DevExpress.XtraEditors.TextEdit();
@@ -66,9 +66,9 @@ namespace is_takip_proje.Formlar
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.simpleButton3);
-            this.groupControl1.Controls.Add(this.simpleButton4);
-            this.groupControl1.Controls.Add(this.simpleButton2);
+            this.groupControl1.Controls.Add(this.BtnSil);
+            this.groupControl1.Controls.Add(this.BtnGuncelle);
+            this.groupControl1.Controls.Add(this.BtnEkle);
             this.groupControl1.Controls.Add(this.BtnListele);
             this.groupControl1.Controls.Add(this.TxtAd);
             this.groupControl1.Controls.Add(this.TxtID);
@@ -79,32 +79,33 @@ namespace is_takip_proje.Formlar
             this.groupControl1.Size = new System.Drawing.Size(282, 488);
             this.groupControl1.TabIndex = 4;
             // 
-            // simpleButton3
+            // BtnSil
             // 
-            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            this.simpleButton3.Location = new System.Drawing.Point(101, 135);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(86, 42);
-            this.simpleButton3.TabIndex = 2;
-            this.simpleButton3.Text = "Sil";
+            this.BtnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.BtnSil.Location = new System.Drawing.Point(101, 135);
+            this.BtnSil.Name = "BtnSil";
+            this.BtnSil.Size = new System.Drawing.Size(86, 42);
+            this.BtnSil.TabIndex = 2;
+            this.BtnSil.Text = "Sil";
             // 
-            // simpleButton4
+            // BtnGuncelle
             // 
-            this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
-            this.simpleButton4.Location = new System.Drawing.Point(196, 135);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(86, 42);
-            this.simpleButton4.TabIndex = 2;
-            this.simpleButton4.Text = "Güncelle";
+            this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
+            this.BtnGuncelle.Location = new System.Drawing.Point(196, 135);
+            this.BtnGuncelle.Name = "BtnGuncelle";
+            this.BtnGuncelle.Size = new System.Drawing.Size(86, 42);
+            this.BtnGuncelle.TabIndex = 2;
+            this.BtnGuncelle.Text = "Güncelle";
             // 
-            // simpleButton2
+            // BtnEkle
             // 
-            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(9, 135);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(86, 42);
-            this.simpleButton2.TabIndex = 2;
-            this.simpleButton2.Text = "Ekle";
+            this.BtnEkle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.BtnEkle.Location = new System.Drawing.Point(9, 135);
+            this.BtnEkle.Name = "BtnEkle";
+            this.BtnEkle.Size = new System.Drawing.Size(86, 42);
+            this.BtnEkle.TabIndex = 2;
+            this.BtnEkle.Text = "Ekle";
+            this.BtnEkle.Click += new System.EventHandler(this.BtnEkle_Click);
             // 
             // BtnListele
             // 
@@ -171,9 +172,9 @@ namespace is_takip_proje.Formlar
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton BtnSil;
+        private DevExpress.XtraEditors.SimpleButton BtnGuncelle;
+        private DevExpress.XtraEditors.SimpleButton BtnEkle;
         private DevExpress.XtraEditors.SimpleButton BtnListele;
         private DevExpress.XtraEditors.TextEdit TxtAd;
         private DevExpress.XtraEditors.TextEdit TxtID;
