@@ -44,5 +44,15 @@ namespace is_takip_proje.Formlar
             XtraMessageBox.Show("Departman Başarılı Bir Şekilde Sisteme Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Listele();
         }
+
+        private void BtnSil_Click(object sender, EventArgs e)
+        {
+            int x = int.Parse(TxtID.Text);
+            var deger = db.TblDepartmanlar.Find(x);
+            db.TblDepartmanlar.Remove(deger);
+            db.SaveChanges();
+            XtraMessageBox.Show("Departman Silme Başarılı Bir Şekilde Gerçekleşti", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            Listele();
+        }
     }
 }

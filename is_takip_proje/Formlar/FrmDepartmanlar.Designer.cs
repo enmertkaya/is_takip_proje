@@ -87,6 +87,7 @@ namespace is_takip_proje.Formlar
             this.BtnSil.Size = new System.Drawing.Size(86, 42);
             this.BtnSil.TabIndex = 2;
             this.BtnSil.Text = "Sil";
+            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
             // BtnGuncelle
             // 
